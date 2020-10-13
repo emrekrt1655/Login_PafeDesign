@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, Dimensions } from 'react-native';
 
 const ImgCart = () =>{
     return(
@@ -14,8 +14,8 @@ const ImgCart = () =>{
 export default ImgCart;
 
 const styles = StyleSheet.create({img:{
-    width:200,
-    height: 150,
+    width: Dimensions.get('window').width * 0.40,
+    height: Dimensions.get('window').height * 0.30,
     resizeMode: 'cover'    
 },
 container:{

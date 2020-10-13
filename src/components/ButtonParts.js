@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, View, Text, StyleSheet, Platform } from 'react-native';
 
 
 const ButtonParts = () =>{
@@ -19,7 +19,7 @@ export default ButtonParts;
 
 const styles = StyleSheet.create({buttoncontainer:{
     backgroundColor: '#546E7A',
-    padding:13,
+    padding: Platform.OS === 'android' ? 10 : 15,
     borderRadius:5,
     alignItems: 'center',
     width:200,
